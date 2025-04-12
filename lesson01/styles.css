@@ -1,0 +1,74 @@
+body {
+  background-color: dimgray;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  background-color: greenyellow;
+  border-style: double;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 250%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+div.divider {
+  background-color: black;
+  padding: 1px;
+  border-radius: 25px;
+}
+
+.first {
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.second {
+  font-size: 200%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  font-size: 200%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  margin: auto;
+  border-radius: 10px;
+  width: 10%;
+  animation: spin 3s 1;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 3%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+  list-style-type: circle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+}
+li {
+  margin-top: 0.5em;
+  margin-right: 10px;
+}
+
+/* little spin for images */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
