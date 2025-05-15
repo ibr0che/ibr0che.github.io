@@ -1,39 +1,51 @@
+$bg-color: dimgray;
+$primary-color: greenyellow;
+$text-color: black;
+$font-main: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+$font-alt: "Courier New", Courier, monospace;
+$font-header: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$font-list: Verdana, Geneva, Tahoma, sans-serif;
+
 body {
-  background-color: dimgray;
+  background-color: $bg-color;
 }
 
 h1 {
   text-align: center;
-  color: black;
-  background-color: greenyellow;
-  border-style: double;
-  border-width: 4px;
-  border-color: black;
+  color: $text-color;
+  background-color: $primary-color;
+  border: double 4px $text-color;
   border-radius: 20px;
   padding: 30px;
   font-size: 250%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: $font-header;
 }
 
-div.divider {
-  background-color: black;
-  padding: 1px;
-  border-radius: 25px;
+h2 {
+  margin-top: 3%;
+  font-family: $font-main;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+
+  &.divider {
+    background-color: $text-color;
+    padding: 1px;
+    border-radius: 25px;
+  }
 }
 
 .first {
   font-size: large;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $font-alt;
 }
 
-.second {
-  font-size: 200%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
+.second,
 p {
   font-size: 200%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: $font-main;
 }
 
 img {
@@ -43,28 +55,18 @@ img {
   animation: spin 3s 1;
 }
 
-div {
-  display: flex;
-  justify-content: center;
-}
-
-h2 {
-  margin-top: 3%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
 ul {
   list-style-type: circle;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $font-list;
   font-size: 110%;
+
+  li {
+    margin-top: 0.5em;
+    margin-right: 10px;
+  }
 }
 
-li {
-  margin-top: 0.5em;
-  margin-right: 10px;
-}
-
-/* little spin for images */
+// Animations
 @keyframes spin {
   from {
     transform: rotate(0deg);

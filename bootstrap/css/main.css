@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+body,
+html {
+  height: 100%;
+}
+
+body #bg {
+  -webkit-clip-path: circle(90% at 33% 33%);
+          clip-path: circle(90% at 33% 33%);
+  background-color: rgba(0, 0, 0, 0.349);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+body header {
+  color: greenyellow;
+  padding: 15px;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main section#card {
+  background: linear-gradient(to right, #d6c7ff, #ab8bff);
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  width: 50%;
+}
+main img {
+  margin: auto;
+  border-radius: 10px;
+  width: 10%;
+  animation: spin 3s 1;
+}
+main ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+main li {
+  margin-bottom: 10px;
+}
+main li strong {
+  font-size: 20px;
+}
+main section#primary {
+  margin: auto;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  text-align: center;
+}
+main h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.349);
+  background-color: greenyellow;
+  border: double 4px rgba(0, 0, 0, 0.349);
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 250%;
+  font-family: "Roboto Condensed", "sans-serif";
+}
+main h2 {
+  margin-top: 3%;
+  font-family: "Roboto Condensed", "sans-serif";
+}
+main div {
+  display: flex;
+  justify-content: center;
+}
+main div.divider {
+  background-color: rgba(0, 0, 0, 0.349);
+  padding: 1px;
+  border-radius: 25px;
+}
+main .first {
+  font-size: large;
+  font-family: "Roboto Condensed", "sans-serif";
+}
+main .second,
+main p {
+  font-size: 200%;
+  font-family: "Roboto Condensed", "sans-serif";
+}/*# sourceMappingURL=main.css.map */
