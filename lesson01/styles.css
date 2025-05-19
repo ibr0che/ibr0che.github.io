@@ -1,51 +1,39 @@
-$bg-color: dimgray;
-$primary-color: greenyellow;
-$text-color: black;
-$font-main: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-$font-alt: "Courier New", Courier, monospace;
-$font-header: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-$font-list: Verdana, Geneva, Tahoma, sans-serif;
-
 body {
-  background-color: $bg-color;
+  background-color: dimgray;
 }
 
 h1 {
   text-align: center;
-  color: $text-color;
-  background-color: $primary-color;
-  border: double 4px $text-color;
+  color: black;
+  background-color: greenyellow;
+  border-style: double;
+  border-width: 4px;
+  border-color: black;
   border-radius: 20px;
   padding: 30px;
   font-size: 250%;
-  font-family: $font-header;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-h2 {
-  margin-top: 3%;
-  font-family: $font-main;
-}
-
-div {
-  display: flex;
-  justify-content: center;
-
-  &.divider {
-    background-color: $text-color;
-    padding: 1px;
-    border-radius: 25px;
-  }
+div.divider {
+  background-color: black;
+  padding: 1px;
+  border-radius: 25px;
 }
 
 .first {
   font-size: large;
-  font-family: $font-alt;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.second,
+.second {
+  font-size: 200%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 p {
   font-size: 200%;
-  font-family: $font-main;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 img {
@@ -55,18 +43,28 @@ img {
   animation: spin 3s 1;
 }
 
-ul {
-  list-style-type: circle;
-  font-family: $font-list;
-  font-size: 110%;
-
-  li {
-    margin-top: 0.5em;
-    margin-right: 10px;
-  }
+div {
+  display: flex;
+  justify-content: center;
 }
 
-// Animations
+h2 {
+  margin-top: 3%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+  list-style-type: circle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 110%;
+}
+
+li {
+  margin-top: 0.5em;
+  margin-right: 10px;
+}
+
+/* little spin for images */
 @keyframes spin {
   from {
     transform: rotate(0deg);
