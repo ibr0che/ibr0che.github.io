@@ -3,10 +3,10 @@
 $font-main: "Roboto Condensed", "sans-serif";
 
 $colors: (
-  bg-color: rgba(0, 0, 0, 0.349),
-  primary-color: greenyellow,
-  text-color: rgb(0, 0, 0),
-  card-color: linear-gradient(to right, #d6c7ff, #ab8bff),
+  bg-color: #144e5c,
+  primary-color: white,
+  text-color: #daffad,
+  card-color: linear-gradient(to right, #144e5c, #daffad),
 );
 
 $padding: 15px;
@@ -50,18 +50,13 @@ body {
 
 main {
   section#card {
-    background: colors(primary-color);
+    background: colors(card-color);
     padding: 20px;
     margin: 1em auto;
     border-radius: $borders;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     width: 50%;
-    transition: background-color 0.2s ease-in-out;
   }
-  section#card:hover {
-    background-color: #a6a6a6;
-  }
-
   .column {
     margin: 2rem;
   }
@@ -81,9 +76,9 @@ main {
   }
 
   ul {
-    list-style-type: none;
-    margin: 0;
+    list-style-type: circle;
     padding: 0;
+    margin-left: 1.5em;
   }
   li {
     margin-bottom: 10px;
