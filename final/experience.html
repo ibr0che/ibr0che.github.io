@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrahim's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-white text-gray-900 font-[Raleway]">
+    <header>
+      <div>
+        <button
+          id="menu-toggle"
+          class="block md:hidden focus:outline-none"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          ☰
+        </button>
+
+        <nav id="nav-menu" class="links" role="navigation">
+          <a href="index.html">About me</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact me</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Nav Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden font-semibold px-4 pb-4 space-y-2"
+        role="navigation"
+      >
+        <a href="index.html" class="block hover:text-white">About me</a>
+        <a href="experience.html" class="block hover:text-white">Experience</a>
+        <a href="contact.html" class="block hover:text-white">Contact me</a>
+      </div>
+    </header>
+    <div class="bg-[#274e68] py-[150px]">
+      <p class="text-center text-7xl font-bold text-white p-3 [m-font]">
+        I'm always ready to learn
+      </p>
+      <p class="text-center text-white text-[20px]">
+        ...no matter the language or framework
+        <span><i class="fa-solid fa-hammer"></i></span>
+      </p>
+    </div>
+
+    <div class="container mx-auto px-4 m-5">
+      <div class="grid grid-cols-1 gap-8">
+        <div class="p-8">
+          <p class="text-2xl">
+            I have a solid understanding of object-oriented programming and
+            possess the critical thinking needed to write useful code. I have a
+            basic understanding of Ruby and have taken a class on website
+            building using Ruby on Rails. I also have a good understanding of
+            React and React Native.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center my-14">
+      <img src="images/ruby.png" alt="React" class="w-[20%] rounded-lg" />
+    </div>
+
+    <section class="bg-light" id="experience">
+      <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-uppercase font-bold">Experience</h2>
+            <p class="lead">
+              Here is a list of some of the languages that I have learned over
+              the years and have experience with:
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+          <div class="col-lg-8">
+            <table
+              class="table table-responsive table-secondary table-striped table-bordered inventory"
+            >
+              <caption>
+                Table of Coding Experience
+              </caption>
+              <thead class="text-uppercase table-dark">
+                <tr scope="row">
+                  <th scope="col">Language</th>
+                  <th scope="col">Years</th>
+                  <th scope="col">Proficiency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                  <th scope="col">Java</th>
+                  <th scope="col">2 yrs</th>
+                  <th scope="col">Intermediate</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">Python</th>
+                  <th scope="col">2 yrs</th>
+                  <th scope="col">Intermediate</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">C++</th>
+                  <th scope="col">2 yrs</th>
+                  <th scope="col">Intermediate</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">HTML</th>
+                  <th scope="col">1 yr</th>
+                  <th scope="col">Beginner</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">JavaScript</th>
+                  <th scope="col">1 yr</th>
+                  <th scope="col">Intermediate</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">CSS</th>
+                  <th scope="col">1 yr</th>
+                  <th scope="col">Beginner</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">Ruby</th>
+                  <th scope="col">> 1 yr</th>
+                  <th scope="col">Beginner</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">React</th>
+                  <th scope="col">> 1 yr</th>
+                  <th scope="col">Intermediate</th>
+                </tr>
+                <tr scope="row">
+                  <th scope="col">Nodejs</th>
+                  <th scope="col">> 1 yr</th>
+                  <th scope="col">Beginner</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mx-auto px-4 m-10">
+      <div class="grid grid-cols-1 gap-8">
+        <div class="p-8">
+          <p class="text-2xl mb-4">
+            I am currently building an e-commerce mobile app using React Native
+            and Node.js for the backend API. I have a basic understanding of
+            databases, such as SQL and Supabase. My skills with Git and GitHub
+            are put to the test daily with my current project.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10">
+      <a
+        href="https://github.com/ibr0che?tab=repositories"
+        target="_blank"
+        class="block max-w-md mx-auto rounded-2xl p-6 text-center bg-gradient-to-r from-green-200 via-amber-200 to-amber-400 shadow-lg hover:shadow-2xl transition-shadow duration-300 no-underline"
+      >
+        <h2 class="text-3xl font-bold text-black mb-2">
+          My GitHub Projects <span> <i class="fa-brands fa-github"></i></span>
+        </h2>
+        <p class="text-amber-950 text-base">Explore my GitHub repositories →</p>
+      </a>
+    </div>
+
+    <div class="footer">
+      <div>
+        <a href="https://github.com/ibr0che" target="_blank"
+          ><span> <i class="fa-brands fa-github"></i></span
+        ></a>
+      </div>
+      <p class="text-center">
+        &copy; ibr0che,
+        <span id="year"></span>.
+      </p>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

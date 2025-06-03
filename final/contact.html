@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrahim's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-white text-gray-900 font-[Raleway]">
+    <header>
+      <div>
+        <button
+          id="menu-toggle"
+          class="block md:hidden focus:outline-none"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          ☰
+        </button>
+
+        <nav id="nav-menu" class="links" role="navigation">
+          <a href="index.html">About me</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact me</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Nav Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden font-semibold px-4 pb-4 space-y-2"
+        role="navigation"
+      >
+        <a href="index.html" class="block hover:text-white">About me</a>
+        <a href="experience.html" class="block hover:text-white">Experience</a>
+        <a href="contact.html" class="block hover:text-white">Contact me</a>
+      </div>
+    </header>
+
+    <div class="bg-[#274e68] py-[150px]">
+      <p class="text-center text-7xl font-bold text-white p-3">
+        Creating things are fun
+      </p>
+      <p class="text-center text-white text-[20px]">
+        ...and I'm always ready to create more
+        <span><i class="fa-solid fa-person-digging"></i></span>
+      </p>
+    </div>
+
+    <div class="flex items-center justify-center min-h-screen bg-gray-100 px-4">
+      <div class="w-full max-w-3xl bg-white rounded-xl shadow-lg p-8">
+        <h2 class="text-3xl font-bold mb-2">Contact</h2>
+        <p class="text-gray-600 mb-6">
+          Feel free to contact me about any questions
+        </p>
+
+        <form
+          name="subform"
+          method="post"
+          action="submit.html"
+          class="space-y-6"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="fname" class="block text-sm font-medium text-gray-700"
+                >First Name:</label
+              >
+              <input
+                type="text"
+                id="fname"
+                placeholder="First name"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+            <div>
+              <label for="lname" class="block text-sm font-medium text-gray-700"
+                >Last Name:</label
+              >
+              <input
+                type="text"
+                id="lname"
+                placeholder="Last name"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email address:</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="name@example.com"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+
+          <div>
+            <span class="block text-sm font-medium text-gray-700 mb-2"
+              >Type of concern</span
+            >
+            <div class="space-y-2">
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="radios"
+                  value="novice"
+                  class="mr-2 text-blue-600"
+                  checked
+                />
+                Questions
+              </label>
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="radios"
+                  value="intermediate"
+                  class="mr-2 text-blue-600"
+                />
+                Employment
+              </label>
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="radios"
+                  value="advanced"
+                  class="mr-2 text-blue-600"
+                />
+                Other
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="refer"
+              class="block text-sm font-medium text-gray-700 mb-1"
+            >
+              How did you hear about me?
+            </label>
+            <select
+              id="refer"
+              class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            >
+              <option selected>Select One</option>
+              <option value="1">Friend</option>
+              <option value="2">Instagram</option>
+              <option value="3">Facebook</option>
+              <option value="4">Twitter</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="comments"
+              class="block text-sm font-medium text-gray-700"
+              >Any Additional Comments?</label
+            >
+            <textarea
+              id="comments"
+              rows="3"
+              maxlength="150"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            ></textarea>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <a href="https://github.com/ibr0che" target="_blank"
+          ><span> <i class="fa-brands fa-github"></i></span
+        ></a>
+      </div>
+      <p class="text-center">
+        &copy; ibr0che,
+        <span id="year"></span>.
+      </p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
